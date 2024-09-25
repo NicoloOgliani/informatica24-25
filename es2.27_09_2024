@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main (){
+    float numerolitri, resto, costoallitro, costototale, importopagato;
+    printf("inserisci il numero dei litri del carburante");
+    scanf("%f", &numerolitri);
+    printf("inserisci il costo al litro del carburante");
+    scanf("%f", &costoallitro);
+    costototale= costoallitro*numerolitri;
+    printf("l'importo da pagare è: %f", costotoale);
+    printf("inserire l'importo pagato: %f");
+    scanf("%f", &importopagato);
+    resto=importopagato-prezzo
+    printf("il resto è di: %f", resto)
+    return =0;
+}
