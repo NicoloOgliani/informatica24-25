@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int nstudenti, nstudentiminori15, studentimagg15, prezzobiglietto, bigliettiomaggio, prezzototale;
+    printf("inserisci il prezzo del biglietto")
+    scanf("%d", &prezzobiglietto)
+    printf("insserire il numero di studenti: \t");
+    scanf("%d", &nstudenti);
+    printf("inserisci il numero di studenti che hanno meno di 15 anni");
+    scanf("%d", &nstudentiminori15);
+    printf("inserisci il numero di studenti che hanno più di 15 anni");
+    scanf("%d", &nstudentimagg15);
+    nstudentimagg15studenti=nstudenti-nstudentiminori15;
+    bigliettiomaggio=sttudenti%12;
+    prezzototale=(prezzobiglietto*nstudentimagg15+prezzobiglietto*nstudentiminori15*0.6)-prezzobiglietto*bigliettigratis;
+    printf("il prezzo da pagare è: %d", prezzotoale);
+    return0;
+}
