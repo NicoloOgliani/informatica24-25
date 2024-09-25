@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main (){
+    int alunni, biglietti alunni, biglietti docenti, costocomplessivo; // dichiarazione
+    printf("inserisci il numero degli alunni: \t");
+    costocomplessivo=bigliettialunni+bigliettidocenti;
+    scanf("%d", &alunni);
+    bigliettialunni=12;
+    bigliettidocenti=6;
+    printf("il costo dei biglietti totale è: %d", costocomplessivo);
+    return 0;
+}
