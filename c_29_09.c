@@ -8,12 +8,10 @@ int main (){
     scanf("%f", &b);
     quadrato= b*b;
     printf("il quadrato è: %f", quadrato);
-    if(quadrato==a)(
+    if(quadrato==a){
         printf("il primo valore %f è il quadrato del secondo %f", a, b);
-    )
-    else{
-        printf("il primo valore %f non è il quadrato del secondo %f", a, b)
-        
     }
-
+    else{
+        printf("il primo valore %f non è il quadrato del secondo %f", a, b);   
+    }
 }
