@@ -5,21 +5,15 @@ int main (){
     printf("inserisci un valore: ");
     scanf("%f", &A);
     if(A %3==0){
-        printf("%f è divisibile per 3", A);
+        if(A%5==0){
+        printf("%f è divisibile per 3 e per 5", A);
     }
     else{
-        printf("%d non è divisibile per 3", A);
+        printf("%d non è divisibile per 3 ma non  per 5", A);
     }
-    if(A %5==0){
-        printf("%f è divisibile per 5", A);
     }
     else{
-        printf("%f non è divisibile per 5", A)
+        printf("%f non è divisibile per 3", A);
     }
-    if(A % 3==0, A % 5 ==0){
-        printf("%f è divisibile sia per 3 che per 5", A)
-    }
-    else{
-        printf("%f non è divisibile ne per 3 ne per 5", A)
-    }
+    return 0;
 }
