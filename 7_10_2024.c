@@ -16,9 +16,9 @@ int main(){
             printf("il numero ha 4 cifre");
         }
         if(k==0){
-            pritf("il  numero ha 3 cifre");
+            printf("il  numero ha 3 cifre");
         }
-        if(K==0 && h==0){
+        if(k==0 && h==0){
             printf("il numero ha 2 cifre");
         }
         if(k==0&&h==0&&da==0){
