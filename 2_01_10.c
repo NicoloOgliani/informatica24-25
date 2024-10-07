@@ -9,8 +9,8 @@ int main (){
     printf("inserisci il valore di c: ");
     scanf("%f", &c);
     media=(a+b+c)/3;
-    max=1;
-    min=1;
+    max=a;
+    min=a;
     if(max<b){
         max=b;
         if(max<c);
@@ -21,7 +21,7 @@ int main (){
         max=c;
     }
     printf("il massimo è %f", max);
-    if(min<b){
+    if(min>b){
         min=b;
         if(min>c);
         min=c;
