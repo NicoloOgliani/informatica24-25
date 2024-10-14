@@ -1,7 +1,7 @@
 //Scrivere un programma che legge 2 orari in ore minuti e secondi e dice quale viene prima dei due.
 #include <stdio.h>
 int main(){
-    int ore1, minuti1, secondi1, ore2, minuti2, secondi2, totale1, totale2, acc1, acc2;
+    int ore1, minuti1, secondi1, ore2, minuti2, secondi2, acc1, acc2;
     acc1=0; 
     acc2=0;
 
@@ -55,17 +55,41 @@ int main(){
     else{
         printf("orario2 non accettabile");
     }
-    totale1=ore1*3600+minuti1*60+secondi1;
-    totale2=ore2*3600+minuti2*60+secondi2;
     if(acc1==1 && acc2==1){
-        if(totale1>totale2){
-            printf("il primo orario è più grande");
-        }
-        else if(totale1==totale2){
-        printf("i due orari sono uguali");
+        if("ore1==ore2&&minuti1==minuti2&&secondi1==secondi2"){
+            printf("gli orari sono uguali");
         }
         else{
-        printf("il secondo orario è il più grande");
+            if(ore1>ore2){
+                printf("l'orario2 viene prima");
+        
+                else if(ore1==ore2){
+                    if(minuti1>minuti2){
+                        printf("l'orario 2 viene prima");
+                    }
+                    else{
+                        printf("l'orario 1 viene prima");
+                    }
+                    if(minuti1=minuti2)
+                        if(secondi1>secondi2){
+                            printf("l'orario 2 viene prima");
+                        }
+                        else{
+                            printf("l'orario1 viene prima");
+                        }
+                }
+            }
+            else{
+                printf("l'orario1 viene prima");
+            }
         }
+    
+
+        }
+        
     }
+
+    }
+
+       
 }
