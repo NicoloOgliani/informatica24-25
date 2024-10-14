@@ -43,24 +43,22 @@ int main() {
     } else if (valore1 < valore2) {
         printf("La seconda carta è maggiore");
     } else {
-        int semeValore1, semeValore2;
-        if (seme1 == 'c') semeValore1 = 4;
-        else if (seme1 == 'q') semeValore1 = 3;
-        else if (seme1 == 'f') semeValore1 = 2;
-        else semeValore1 = 1;
+        int valoreseme1, valoreseme2;
+        if (seme1 == 'c') valoreseme1 = 4;
+        else if (seme1 == 'q') valoreseme1 = 3;
+        else if (seme1 == 'f') valoreseme1 = 2;
+        else valoreseme1 = 1;
         
-        if (seme2 == 'c') semeValore2 = 4;
-        else if (seme2 == 'q') semeValore2 = 3;
-        else if (seme2 == 'f') semeValore2 = 2;
-        else semeValore2 = 1;
-        if (semeValore1 > semeValore2) {
+        if (seme2 == 'c') valoreseme2 = 4;
+        else if (seme2 == 'q') valoreseme2 = 3;
+        else if (seme2 == 'f') valoreseme2 = 2;
+        else valoreseme2 = 1;
+        if (valoreseme1 > valoreseme2) {
             printf("Le carte hanno lo stesso punteggio, ma la prima carta ha un seme di valore maggiore.\n");
-        } else if (semeValore1 < semeValore2) {
+        } else if (valoreseme1 < valoreseme2) {
             printf("Le carte hanno lo stesso punteggio, ma la seconda carta ha un seme di valore maggiore.\n");
         } else {
             printf("Le due carte sono identiche.\n");
         }
     }
-    
-    return 0;
 }
