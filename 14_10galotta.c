@@ -18,22 +18,22 @@ int main(){
     
     /*un anno è bisestile se è multiplo di 4 ma non di 100 oppure
     multiplo di 400*/
-    if(anno%100==0){
-        if(anno%400==0){
+    if(anno1%100==0){
+        if(anno1%400==0){
             printf("l'anno è bisestile ");
             bisestile=1;
         }
     }
     else{
-        if(anno%4==0){
+        if(anno1%4==0){
             printf("l'anno è bisestile");
             bisestile=1;
         }
     }
     //CONTROLLO MESE e giorno
-    if(mese>0 && mese<=12){
-        if(mese==2){
-            if(giorno>=1 && giorno<=28+bisestile)
+    if(mese1>0 && mese1<=12){
+        if(mese1==2){
+            if(giorno1>=1 && giorno1<=28+bisestile)
                 //la variabile bisestile va a uno solo se l'anno è bisestile (verificato prima)
                 printf("la data non è accettabile");
             else
@@ -56,10 +56,56 @@ int main(){
                 }
                 else{
                     printf("la data non è accettabile");
+
                 }
             }
         }
     }
+    //CONTROLLO SECONDA DATA
+    if(anno2%100==0){
+        if(anno2%400==0){
+            printf("l'anno è bisestile ");
+            bisestile=1;
+        }
+    }
+    else{
+        if(anno2%4==0){
+            printf("l'anno è bisestile");
+            bisestile=1;
+        }
+    }
+    //CONTROLLO MESE e giorno
+    if(mese2>0 && mese2<=12){
+        if(mese1==2){
+            if(giorno2>=1 && giorno2<=28+bisestile)
+                //la variabile bisestile va a uno solo se l'anno è bisestile (verificato prima)
+                printf("la data non è accettabile");
+            else
+                printf("la data è accettabile ");
+            
+        }
+        else{
+            if(mese==11|| mese==4 || mese==6|| mese==9){
+                if(giorno>=1 && giorno <=30){
+                    printf("la data è accettabile ");
+
+                }
+                else{
+                    printf("la data non è accettabile");
+                }
+            }
+            else{
+                if(giorno>=1&&giorno<=31){
+                    printf(" la data è accettabile ");
+                }
+                else{
+                    printf("la data non è accettabile");
+
+                }
+            }
+        }
+    }
+    
     if(anno1>anno2){
         printf("data1 è più recente");
     }
