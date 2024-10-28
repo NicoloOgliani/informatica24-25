@@ -9,9 +9,51 @@
         3.  MOLTIPLICAZIONE
         4.  DIVISIONE  "*/
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
-    int num1, num2, num, termina0, somma1 , diff2, molt3, divis4;
-    printf("inserisci un numero");
+    float num1, num2, scelta;
+    printf("inserisci un numero dal menu");
+    printf("0. termina");
+    printf("1. somma");
+    printf("2. differenza");
+    printf("3. moltiplicazione");
+    printf("4. divisione");
+
+    printf("scegli l'operazione");
+    scanf("%d", &scelta);
+    srand(time(NULL));//generare numero casuale
+    num1=rand()%50+1;
+    num2=rand()%50+1;
+
+    switch (scelta){
+        case 0:
+            printf("\n il programma è terminato");
+            break;
+        case 1:
+            printf("\n la somma è: %.2f", num1+num2);
+            break;
+        case 2:
+            printf("\n la differenza è %.2f", num2-num1);
+            break;
+        case 3:
+            printf("\n il prodotto è %.2f", num1*num2);
+            break;
+        case 4:
+            printf("\n la divisione è %.2f", num1/num2);
+            break;
+        default:
+            printf("\n la scelta non è acc");
+            break;
+    }
+    return 0;
+}
+
+
+
+
+
+
+    /*
     if(num<0||num>4){
         printf(" il numero inserito non va bene");
     }
@@ -19,17 +61,17 @@ int main(){
         printf("termina il programma");
     else if(num==1)
         somma1=num1+num2;
-        printf("la somma tra i due numeri è: %d", somma1);
+        printf("la somma tra i due numeri è: %f", somma1);
     else if(num==2)
         diff2=num1-num2;
-        printf("la diff è uguale a: %d", diff2);
+        printf("la diff è uguale a: %f", diff2);
     else if(num==3)
         molt3=num1*num2;
-        printf("la molt tra i numeri è uguale a: %d", molt3);
+        printf("la molt tra i numeri è uguale a: %f", molt3);
     else if(num==4)
         divis4=num1/num2;
-        printf("la divisione tra i due numeri è uguale a: %d",divis4);
-    
+        printf("la divisione tra i due numeri è uguale a: %f",divis4);
+    */
 
 
 
