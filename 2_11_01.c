@@ -5,16 +5,19 @@
 Data una somma di denaro calcolare il controvalore.*/
 #include <stdio.h>
 int main(){
-    float valore, controvalore, dollari, euro;
-    printf("dollari_euro=1 \n  euro_dollari=2")
+    float valore, controvalore, dollari, euro, soldi;
+    printf("dollari_euro=1 \n euro_dollari=2 \n");
     printf("scegli un valore dal menu");
     scanf("%f", &valore);
-    if(valore==1){
-        controvalore=(valore/1.23);
+    printf("inserisci un valore di dollari o di euro");
+    scanf("%f", &soldi);
+
+    if(valore==1){// oppure switch(valore){ case 1:  break;
+        controvalore=soldi/1.23;
         printf("il controvalore è: %f", controvalore);
     }
     else{
-        controvalore=(valore*1.23);
+        controvalore=(soldi*1.23);
         printf("il controvalore è: %f", controvalore);
     }
 }
