@@ -9,7 +9,7 @@ da 2 cifre e k compare 1 volta*/
 #include <time.h>
 int main(){
     int n1=0, K=0, u=0, da=0, h=0, k=0;
-    printf("Inserisci il valore di K: ");
+    printf("Inserisci il numero: ");
     scanf("%d%d%d%d", &k, &h, &da, &u);
     srand(time(NULL));
     K=rand()%9999+0;
@@ -29,6 +29,7 @@ int main(){
             }
             else if(k==K || h==K || da==K || u==K && k==K || h==K || da==K || u==K ){
                 printf("K compare due volte");
+            }
         }
         else if(h>0){
             printf("Il numero è composto da 3 cifre\n");
@@ -40,6 +41,7 @@ int main(){
             }
             else if(k==K ||  h==K || da==K || u==K && k==K || h==K || da==K || u==K && k==K || h==K || da==K || u==K  ){
                 printf("K compare 3 volte");
+            }
         }
         else if(k>0){
             printf("Il numero è composto da 4 cifre\n");
@@ -56,9 +58,11 @@ int main(){
                 printf("K compare quatro volte");
             }
         }
-    }
+        }
+    
     else{
         printf("Il valore non è accettabile");
     }
+
     return 0;
 }
