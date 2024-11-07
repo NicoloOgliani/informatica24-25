@@ -9,8 +9,15 @@ da 2 cifre e k compare 1 volta*/
 #include <time.h>
 int main(){
     int n1=0, K=0, u=0, da=0, h=0, k=0;
-    printf("Inserisci il numero: ");
-    scanf("%d%d%d%d", &k, &h, &da, &u);
+    printf("Inserisci unità(cifra unità): ");
+    scanf("%d",  &u);
+    printf("inserisci da(cifra decine):");
+    scanf("%d", &da);
+    printf("inserisci h (cifra centinaia): ");
+    scanf("%d", &h);
+    printf("inserisci k (cifra migliaia): ")
+    scanf("%d", &k);
+
     srand(time(NULL));
     K=rand()%9999+0;
     printf("IL valore di K è: %d", K);
