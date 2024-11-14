@@ -15,7 +15,7 @@ int main(){
     scanf("%d", &da);
     printf("inserisci h (cifra centinaia): ");
     scanf("%d", &h);
-    printf("inserisci k (cifra migliaia): ")
+    printf("inserisci k (cifra migliaia): ");
     scanf("%d", &k);
 
     srand(time(NULL));
