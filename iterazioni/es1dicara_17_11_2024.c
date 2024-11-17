@@ -6,7 +6,10 @@ int main(){
     int num, cnt=0;
     printf("Inserisci un numero: ");
     scanf("%d", &num);
-    while(num<0&& (num%2)){
-
+    if(num>=0&& (num%2)==0){
+        do{
+            
+        }
     }
+    printf("I numeri pari inferiori a %d sono: %d ", num, cnt);
 }
