@@ -3,20 +3,16 @@
  #include <stdio.h>
 
 int main() {
-    int count = 0;
-    int num = 1;  // Il primo numero dispari
-
-    // Ciclo per stampare i primi 100 numeri dispari
+    int cnt = 0, num=1;
     for (int i = 1; i <= 100; i++) {
-        printf("%d ", num);  // Stampa il numero dispari
-        count++;
-
+        printf("%d ", num);
+        cnt++;
         if (count == 5) {
-            printf("\n");  // Vai a capo dopo ogni 5 numeri
-            count = 0;  // Resetta il conteggio dei numeri per la nuova riga
+            printf("\n"); 
+            cnt = 0; 
         }
 
-        num += 2;  // Passa al prossimo numero dispari
+        num += 2;
     }
 
     return 0;
