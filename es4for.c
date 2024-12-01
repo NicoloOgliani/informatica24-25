@@ -4,18 +4,11 @@
   #include <stdio.h>
 
 int main() {
-    int n;
-
-    // Chiede all'utente di inserire un numero
+    int n=0;
     printf("Inserisci un numero: ");
     scanf("%d", &n);
-
-    // Stampa i primi 12 multipli del numero n
     printf("I primi 12 multipli di %d sono:\n", n);
     for (int i = 1; i <= 12; i++) {
-        printf("%d ", n * i);  // Stampa il moltiplicato
-    }
-    printf("\n");
-
-    return 0;
+        printf("%d ", n * i);
+}
 }
