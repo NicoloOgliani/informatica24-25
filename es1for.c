@@ -3,19 +3,26 @@ il metodo delle somme successive dopo aver controllato l’input e accettato sol
 #include <stdio.h>
 
 int main() {
-    int num1, num2, prodotto=0;
+    int num1, num2, somma=0, i;
     do {
-        printf("Inserisci il primo numero (maggiore di 0): ");
+        printf("Inserisci il primo numero: ");
         scanf("%d", &num1);
-    } while (num1 <= 0);
+    } while (num1 < 0);
 
     do {
-        printf("Inserisci il secondo numero (maggiore di 0): ");
+        printf("Inserisci il secondo numero: ");
         scanf("%d", &num2);
-    } while (num2 <= 0);
-    for (int i = 1; i <= num2; i++) {
-        prodotto += num1;
+    } while (num2 < 0);
+    for (int i = 0; i <num1; i++) {
+        somma += num2;//somma =somma+num2
     }
-    printf("Il prodotto di %d e %d è: %d\n", num1, num2, prodotto);
+    printf("Il prodotto di %d e %d è: %d\n", num1, num2, somma);
 
 }
+/*
+i    somma    num1   num2
+        0       3      10
+0      10       3      10
+1      20
+2      30
+3 non entra nel ciclo perchè si ferma quando i diventa uguasle a num1*/
