@@ -13,5 +13,15 @@ int main(){
         }
         printf("\n");
     }
-    
+    for(int h=0; h<9; h++){
+        for(int b=0; b<9; b++){
+            if(h==8 || (h==0 && b==4) || (h==2 && (b==3 || b==5)) || (h==4&& (b==2 || b==6)) || ((b==1 || b==7) && h==6)){
+                printf("* ");
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf("\n")
+    }
 }
