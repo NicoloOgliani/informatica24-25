@@ -16,7 +16,8 @@ int main() {
     for (int i = 0; i <num1; i++) {
         somma += num2;//somma =somma+num2
     }
-    printf("Il prodotto di %d e %d è: %d\n", num1, num2, somma);
+    printf("Il prodotto tra %d e %d è: %d\n", num1, num2, somma);
+    return 0;
 
 }
 /*
