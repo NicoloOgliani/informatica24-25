@@ -13,15 +13,7 @@ int main(){
         printf("Il numero maggiore è %d", num1);
         magg=num1;
         min=num2;
-    }
-    else if(num2>num1){
-        printf("Il numero maggiore è %d", num2);
-        magg=num2;
-        min=num1;
-    }
-    else{
-        printf("I due numeri sono uguali");
-    }
+    }/*oppure con variabile temp if(num1>num2) temp=num1; num1=num2; temp=num2;*/
     quoz=magg;
     while(quoz>=min){
         quoz=(quoz-min);
