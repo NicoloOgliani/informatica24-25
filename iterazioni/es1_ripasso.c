@@ -1,0 +1,1 @@
+/*stampa i primi n numeri dispari successivi al numero a*/
