@@ -3,12 +3,13 @@
  indicandone il numero d'ordine (cioè se era il primo numero inserito, il secondo o terzo e così via).*/
 #include <stdio.h>
 int main (){
-    int n, val, pos, min;
+    int n, val, pos, min, cnt=0;
     do{
         printf("Inserisci un numero di valori: ");
         scanf("%d", &n);    
     }while(val<=2);
     for(int i=1; i<=n; i++){
+        cnt++;
         printf("Inserisci un numero: ");
         scanf("%d", &val);
         if(i==1){
@@ -16,7 +17,7 @@ int main (){
         }
         else if(val<min){
             min=val;
-            pos=i;
+            pos=cnt;
         }
             
     }
