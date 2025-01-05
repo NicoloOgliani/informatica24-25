@@ -5,18 +5,35 @@ con numeri consecutivi e partendo da 1 nell’angolo in alto a sinistra.
 */
 #include <stdio.h>
 int main(){
-    int n;
+    int n, cifra=1;
     do{
         printf("Inserisci un numero: ");
         scanf("%d", &n);
+
     }while(n<0);
-    for(int i=0; i<=n; i++){
-        if(i==2 || i==4){
-        printf("\n     ");
+
+    for(int i=1; i<=n; i++){
+        if(i>=2){
+            if(i%2==0){
+                cifra=cifra+n-1;
+            }
+            else{
+                cifra=cifra+n+1;
+            }
+        }
+        if(i%2==1){
+            for(int j=1; j<=n; j++){
+                printf("%d", cifra);
+                cifra++;
+            }
         }
         else{
-            printf("\n");
+            for(int j=1; j<=n; j++){
+                printf("%d", cifra);
+                cifra--;
+            }
         }
-        printf("")
+        printf("\n");
     }
+    
 }
