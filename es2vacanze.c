@@ -5,7 +5,7 @@ con numeri consecutivi e partendo da 1 nell’angolo in alto a sinistra.
 */
 #include <stdio.h>
 int main(){
-    int n, cifra=1;
+    int n, val=1;
     do{
         printf("Inserisci un numero: ");
         scanf("%d", &n);
