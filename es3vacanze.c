@@ -5,3 +5,16 @@ il giocatore con la carta più alta vince tutte le fiches puntate nella mano cor
 se c’è più di un singolo giocatore con la carta più alta, il banco prende tutto.
 Il gioco termina quando un giocatore ha perso tutte le fiches.
 */
+#include <stdio.h>
+int main(){
+    int N, carta, fiches;
+    do{
+        printf("Quanti giocatori partecipano? ");
+        scanf("%d", &N);
+
+    }while(n<=0);
+    srand(time(NULL));
+    fiches=rand()%100000+0;
+    printf("Ogni giocatore ha %d fiches ");
+    
+}
