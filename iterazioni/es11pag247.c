@@ -13,7 +13,7 @@ int main(){
         do{
             printf("Inserisci un numero: ");
             scanf("%d", &num);
-        }while(i<0 || i>20);
+        }while(i<0 || i>30);
         if(num>x){
             cnt1++;
         }
@@ -27,6 +27,7 @@ int main(){
     printf("I numeri maggiori di x sono %d", cnt1);
     printf("I numeri minori di x sono %d", cnt2);
     printf("I numeri uguali a x sono %d", cnt3);
+    return 0;
 
     
 }
