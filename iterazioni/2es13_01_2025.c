@@ -9,7 +9,7 @@ int main(){
     printf("inserisci la quantità di numeri: ");
     scanf("%d", &quantita);
     }while(quantita <= 0);
-    for (int i = inizio+1; i < inizio+quantita; i++){
+    for (int i = inizio+1; i <= inizio+quantita; i++){
         somma += i * i;
     }
     printf("La somma dei quadrati dei 12 numeri successivi al numero inserito è: %d\n", somma);
