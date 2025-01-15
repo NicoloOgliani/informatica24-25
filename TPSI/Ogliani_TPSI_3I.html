@@ -1,0 +1,90 @@
+<!--Esercizio 1
+Creare una tabella 3 colonne per 3 righe. La tabella ha un bordo colorato e uno spessore a piacere.
+La sua dimensione è di 200px(in larghezza) e 300px(di altezza):-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ogliani_TPSI_3I</title>
+    <style>
+        table {
+            border: 5px solid red;
+            width: 200px;
+            height: 300px;
+        }
+        td {
+            border: 5x solid red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr style="border: 2px solid red;">
+            <td>cella 1 riga 1</td>
+            <td>cella 2 riga 1</td>
+            <td>cella 3 riga 1</td>
+        </tr>
+        <tr style="border: 2px solid red;">
+            <td>cella 1 riga 2</td>
+            <td>cella 2 riga 2</td>
+            <td>cella 3 riga 2</td>
+        </tr>
+        <tr style="border: 2px solid red;">
+            <td>cella 1 riga 3</td>
+            <td>cella 2 riga 3</td>
+            <td>cella 3 riga 3</td>
+        </tr>
+
+    </table>
+    <br><br>
+    <!-- Esercizio 2: Fare in modo tale che il seguente codice sia formattato come di seguito
+     e posizionato a lato destro dello schermo-->
+    <div style="float: right; width:50%;">
+        <h1 style="text-align: left;">Alessandro Manzoni</h1>
+        <h2 style="text-align: left; font-style: italic;">I Promessi sposi</h2>
+        <p>“Quel ramo de <b>lago di Como</b>, che volge a mezzogiorno,
+            <u>tra due catene non interrotte di monti</u>, tutto a seni e a golfi,
+            a seconda dello sporgere e del rientrare di quelli, vien,
+            quasi a un tratto a ristringersi, e a prender corso e figura di fiume,
+            tra un promontorio a destra, e un’ampia costiera dall’altra parte;
+            e il ponte, che <mark>ivi congiunge le due rive</mark>, par che renda ancor più
+            sensibile all’occhio questa trasformazione, e segni il punto in cui
+            il lago cessa, e l’Adda ricomincia, per ripigliar poi il nome di lago
+            dove le rive, allontanandosi di nuovo, lascian l’acqua distendersi
+            e rallentarsi in nuovi golfi e in nuovi seni…”</p>
+            <a href="alessandromanzoni.it">Alessandro Manzoni</a>
+    </div>
+    <br><br>
+    <!-- Esercizio 3: creare un form che chiede ad un utente l'inserimento del: nome, cognome, mail
+    e la selezione di lingue che parla tra inglese, francese e spagnolo -->
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome"><br><br>
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" name="mail"><br><br>
+        <label for="lingue">Lingue:</label>
+        <select id="lingue" name="lingue">
+            <option value="inglese">inglese</option>
+            <option value="francese">francese</option>
+            <option value="spagnolo">spagnolo</option>
+        </select>
+    </form>
+    <br><br>
+    <!-- Esercizio 4: creare il seguente elenco puntato ( o ) degli ingredienti di una torta:
+    burro
+    uova
+    farina
+    latte
+    zucchero-->
+    <p>Ingredienti della torta</p>
+    <ul>
+        <li>burro</li>
+        <li>uova</li>
+        <li>farina</li>
+        <li>latte</li>
+        <li>zucchero</li>
+    </ul>
+    <br><br>
+</body>
+</html>
