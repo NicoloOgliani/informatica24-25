@@ -27,4 +27,5 @@ int main(){
     }else{
         printf("i numeri %d e %d non sono numeri amicali", num1, num2);
     }
+    return 0;
 }

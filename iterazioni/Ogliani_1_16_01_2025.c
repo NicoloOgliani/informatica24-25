@@ -21,6 +21,7 @@ int main(){
             printf("%d è un numero primo\n", i);
         }
     }
+    return 0;
 
     
 }
