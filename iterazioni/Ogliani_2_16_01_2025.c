@@ -22,9 +22,9 @@ int main(){
         }
     }
     if(somma1 == num2 && somma2 == num1){
-        printf("I numeri %d e %d sono numeri amicali\n", num1, num2);
+        printf("i numeri %d e %d sono numeri amicali", num1, num2);
     
     }else{
-        printf("I numeri %d e %d non sono numeri amicali\n", num1, num2);
+        printf("i numeri %d e %d non sono numeri amicali", num1, num2);
     }
 }
