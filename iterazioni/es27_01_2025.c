@@ -49,5 +49,6 @@ int main(){
         }
         tentativi--;
     }
+    return 0;
 
 }
