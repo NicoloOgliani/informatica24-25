@@ -12,6 +12,7 @@ int main(){
     scanf("%d", &n);
     }while(n<0);
     conv=converti(n);
+    printf("%ld\n", conv);
 }
 long converti(int _n){
     int quoz=_n, resto=0, cnt=0, _conv=0;
