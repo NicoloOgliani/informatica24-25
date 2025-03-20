@@ -6,7 +6,7 @@ creazione di libreria personale*/
 int main(){
     int vettore[DIM]={0};
 
-    richiediValore(vettore, DIM);
-    stampaVett(vettore, DIM, sep);
+    richiediValori(vettore, DIM);
+    stampaVett(vettore, DIM, ' ');
 
 }

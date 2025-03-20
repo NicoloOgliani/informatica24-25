@@ -6,8 +6,10 @@ void richiediValori(int vett[], int dim){
     while(i<dim){
         printf("Inserisci un valore: ");
         scanf("%d", &n);
+        if(n%2==0){
         vett[i]=n;
         i++;
+        }
     }
 }
 void stampaVett(int vett[],int dim, char sep){
