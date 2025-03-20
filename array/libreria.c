@@ -35,4 +35,12 @@ int somma(int vett[], int dim){
 float media(int vett[], int dim){
     return (float)somma(vett, dim)/dim;
 }
-
+int contaValore(int vett[], int dim, int val){
+    int cnt=0;
+    for(int i=0; i<dim; i++){
+        if(vett[i]==val){
+            cnt++;
+        }
+    }
+    return cnt;
+}

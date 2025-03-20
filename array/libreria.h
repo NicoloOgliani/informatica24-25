@@ -33,3 +33,11 @@ float media(int vett[], int dim);
  * @param int dim dimensione del vettore
  * @return float media dei valori del vettore
  */
+int contaValore(int vett[], int dim, int val);
+/**
+ * funzione che conta quante volte un valore compare in un vettore
+ * @param int vett[] vettore in cui cercare il valore
+ * @param int dim dimensione del vettore
+ * @param int val valore da cercare
+ * @return int numero di volte che il valore compare nel vettore
+ */
