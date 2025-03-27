@@ -1,43 +1,64 @@
-/*prototipi delle funzioni*/
-void richiediValori(int vett[], int dim);
-/**funzione che richiede i valori da inserire in un vettore
- * @param int vett[]vettore in cui inserire i valori
- * @param int dim dimensione del vettore
+void stampaVettore(int vettore[], int dim, char sep);
+/**
+ * funzione che stampa gli elementi di un vettore.
+ * @param int [] vettore di interi 
+ * @param int dimensione del vettore 
+ * @param char separatore tra un elemento e un altro 
  */
 
-void stampaVett(int vett[],int dim,char sep);
-/**funzione che stampa un vettore
- * @param int vett[] vettore da stampare
- * @param int dim dimensione del vettore
- * @param char sep separatore tra i vettori  
- */
-void caricaVettoreRandom(int vett[], int dim, int min, int max);
+void riempiVettore(int vettore[], int dim);
 /**
- * funzione che carica un vettore con valori random
- * @param int vett[] vettore da caricare
- * @param int dim dimensione del vettore
- * @param int min valore minimo
- * @param int max valore massimo
+ * funzione che riempie un vettore con valori scelti dall'utente.
+ * @param int [] vettore di interi 
+ * @param int dimensione del vettore 
  */
-int somma(int vett[], int dim);
+
+void riempiVettoreCasuale(int vettore[], int dim, int minimo, int massimo);
 /**
- * funzione che calcola la somma dei valori di un vettore
- * @param int vett[] vettore di cui calcolare la somma
- * @param int dim dimensione del vettore
- * @return int somma dei valori del vettore
+ * funzione riempie un vettore con numeri casuali compresi tra un minimo e un massimo.
+ * @param int [] vettore di interi 
+ * @param int dimensione del vettore 
+ * @param int minimo valore minimo dei numeri casuali
+ * @param int massimo valore dei numeri casuali
  */
-float media(int vett[], int dim);
+
+int contaOccorrenze(int vettore[], int dim, int valore);
 /**
- * funzione che calcola la media dei valori di un vettore
- * @param int vett[] vettore di cui calcolare la media
- * @param int dim dimensione del vettore
- * @return float media dei valori del vettore
+ * questa funzione restituisce il numero di volte in cui compare la variabile valore all'interno del vettore
+ * @param int[]vettore in ingresso
+ * @param int dimensione del vettore
+ * @param int valore da ricercare
+ * @return int numero di occorrenze
  */
-int contaValore(int vett[], int dim, int val);
+
+int ricercaSequenziale(int *vettore, int dim, int valore);
 /**
- * funzione che conta quante volte un valore compare in un vettore
- * @param int vett[] vettore in cui cercare il valore
- * @param int dim dimensione del vettore
- * @param int val valore da cercare
- * @return int numero di volte che il valore compare nel vettore
+ * questa funzione restituisce la posizione del primo elemento nell'array che ha valore uguale alla variabile valore, se non trova l'elemento restituisce -1
+ * @param int* vettore in ingresso
+ * @param int dimensione del vettore
+ * @param int valore da ricercare
+ * @return int posizione del primo elemento uguale a valore o -1 se non trovato
  */
+
+
+int ricercaBinaria(int array[], int dim, int estInf, int estSup, int valore);
+/**
+ * questa funzione restituisce la posizione del primo elemento in un array ORDINATO in ordine crescente che ha valore uguale alla variabile valore, se non trova l'elemento restituisce -1
+ * @param int[]vettore in ingresso
+ * @param int dimensione del vettore
+ * @param int indice dell'elemento da cui parte la ricerca
+ * @param int indice dell'elemento a cui arriva la ricerca
+ * @param int valore da ricercare
+ * @return int posizione del primo elemento uguale a valore o -1 se non trovato
+ */
+
+
+ void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo);
+/**
+ * Funzione che riempie un vettore di dimensione dim con numeri casuali in ordine crescente
+ * @param int[] vettore in ingresso
+ * @param int dimensione del vettore
+ * @param int minimo valore minimo dei numeri casuali
+ * @param int massimo valore dei numeri casuali
+ */
+
