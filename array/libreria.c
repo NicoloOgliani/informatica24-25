@@ -31,6 +31,7 @@ int contaOccorrenze(int vettore[], int dim, int valore){
 }
 
 
+
 int ricercaSequenziale(int *vettore, int dim, int valore){
     for(int i = 0; i<dim; i++){
         if(vettore[i]==valore){
@@ -79,4 +80,37 @@ void riempiVettoreOrdinatoCasuale(int vett[], int dim, int minimo, int massimo) 
 
     }
 }
-
+void bubbleSortC(int vett[], int dim){
+    int temp;
+    int flag=0;
+    int i=0;
+    while(flag==0){
+        flag=1;
+        for(int j=0; j<dim-1-i; j++){
+            if(vett[j]>vett[j+1]){
+                flag=0;
+                temp=vett[j];
+                vett[j]=vett[j+1];
+                vett[j+1]=temp;
+            }
+        }
+        i++;
+    }
+}
+void bubbleSortD(int vett[], int dim){
+    int temp;
+    int flag=0;
+    int i=0;
+    while(flag==0){
+        flag=1;
+        for(int j=0; j<dim-1-i; j++){
+            if(vett[j+1]>vett[j]){
+                flag=0;
+                temp=vett[j+1];
+                vett[j+1]=vett[j];
+                vett[j]=temp;
+            }
+        }
+        i++;
+    }
+}

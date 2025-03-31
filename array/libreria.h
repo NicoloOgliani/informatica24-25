@@ -62,3 +62,15 @@ int ricercaBinaria(int array[], int dim, int estInf, int estSup, int valore);
  * @param int massimo valore dei numeri casuali
  */
 
+ void bubbleSortD(int vett[], int dim);
+/**
+ * Funzione che ordina un vettore di interi in ordine decrescente
+ * @param int[] vettore in ingresso
+ * @param int dimensione del vettore
+ */
+void bubbleSortC(int vett[], int dim);
+/**
+ * Funzione che ordina un vettore di interi in ordine crescente
+ * @param int[] vettore in ingresso
+ * @param int dimensione del vettore
+ */
