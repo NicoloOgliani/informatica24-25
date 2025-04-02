@@ -1,0 +1,116 @@
+<!-- Crea un sito con toolbar centrale contenente tre sezioni principali, una foto e una barra laterale -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetto Arduino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+        .content {
+            width: 60%;
+            padding: 15px;
+        }
+        .image {
+            width: 20%;
+            padding: 15px;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #4CAF50;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Progetto Arduino</h1>
+    </header>
+    <nav>
+        <a href="#sezione1">Sezione 1</a>
+        <a href="#sezione2">Sezione 2</a>
+        <a href="#sezione3">Sezione 3</a>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Barra Laterale</h3>
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="section" id="sezione1">
+                <h2>Sezione 1</h2>
+                <p>Contenuto della sezione 1.</p>
+            </div>
+            <div class="section" id="sezione2">
+                <h2>Sezione 2</h2>
+                <p>Contenuto della sezione 2.</p>
+            </div>
+            <div class="section" id="sezione3">
+                <h2>Sezione 3</h2>
+                <p>Contenuto della sezione 3.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="foto.jpg" alt="Immagine di esempio">
+        </div>
+    </div>
+    <footer>
+        <p>Progetto Arduino - Footer</p>
+    </footer>
+</body>
+</html>
