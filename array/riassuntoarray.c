@@ -15,7 +15,7 @@ int main(){
     printf("\n1) Carica l'array");
     printf("\n2) Stampa l'array");
     printf("\n3) Ordina l'array tramite bubble sort");
-    printf("\nDigita 0 per terminare");
+    printf("\nDigita 0 per terminare\n");
     scanf("%d", &scelta);
 
     switch (scelta){
@@ -23,7 +23,19 @@ int main(){
             riempiVettore(vett, DIM);
             break;
         }
-        
+        case 2:{
+            stampaVettore( vett, DIM, '-');
+            break;
+
+        }
+        case 3:{
+            bubbleSortC( vett, DIM);
+            stampaVettore(vett, DIM, '-');
+            break;
+        }
+        default:
+        break;
+
     }
     }while(scelta!=0);
 
