@@ -6,6 +6,23 @@
 #include <stdio.h>
 #include "libreria.c"
 #define DIM 5
+
+void bubbleSort(int vett[], int dim){
+    int temp=0;
+    int flag=0;
+    int i=0;
+    while(flag==0){
+        flag==1;
+        for(int j=0; j<dim-1-i; j++){
+            if(vett[j]>vett[j+1]){
+                flag=0;
+                temp=vett[j];
+                vett[j]=vett[j+1];
+                vett[j+1]=temp;
+            }
+        }
+    }
+}
 int main(){
     int vett[DIM];
     int scelta;
