@@ -28,10 +28,11 @@ int main(){
     int scelta;
 
     do{
-    printf("MENU");
+    printf("\nMENU");
     printf("\n1) Carica l'array");
     printf("\n2) Stampa l'array");
     printf("\n3) Ordina l'array tramite bubble sort");
+    printf("\n 4) scambia il minimo con il massimo");
     printf("\nDigita 0 per terminare\n");
     scanf("%d", &scelta);
 
@@ -47,6 +48,11 @@ int main(){
         }
         case 3:{
             bubbleSortC( vett, DIM);
+            stampaVettore(vett, DIM, '-');
+            break;
+        }
+        case 4:{
+            scambioMinMax(vett, DIM);
             stampaVettore(vett, DIM, '-');
             break;
         }

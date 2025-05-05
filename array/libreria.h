@@ -74,3 +74,9 @@ void bubbleSortC(int vett[], int dim);
  * @param int[] vettore in ingresso
  * @param int dimensione del vettore
  */
+void scambioMinMax(int vett[], int dim);
+/**
+ * Funzione che scambia il valore minimo e massimo di un vettore di interi
+ * @param int[] vettore in ingresso
+ * @param int dimensione del vettore
+ */

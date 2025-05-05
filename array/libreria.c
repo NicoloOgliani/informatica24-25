@@ -114,3 +114,20 @@ void bubbleSortD(int vett[], int dim){
         i++;
     }
 }
+void scambioMinMax(int vett[], int dim){
+    int min = 0;
+    int max = 0;
+    for(int i=0; i<dim; i++){
+        if(vett[i]<vett[min]){
+            min=i;
+        }
+        if(vett[i]>vett[max]){
+            max=i;
+        }
+    }
+    int temp = vett[min];
+    vett[min]=vett[max];
+    vett[max]=temp;
+    
+    
+}
