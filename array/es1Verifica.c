@@ -4,36 +4,36 @@
 #include <stdlib.h>
 #include <time.h>
 #define DIM 10
-void caricaVettore(int *v, int dim);
-void stampaVettore(int *v, int dim);
-void pariDispari(int *v, int dim, int *p, int *d);
+void caricaVettore(int vett[], int dim);
+void stampaVettore(int vett[], int dim);
+void pariDispari(int vett[], int dim);
 int main() {
-    int v[DIM], dim = DIM, pari = 0, dispari = 0;
+    int vettore[DIM];
     srand(time(NULL));
-    caricaVettore(v, dim);
-    stampaVettore(v, dim);
-    pariDispari(v, dim, &pari, &dispari);
-    printf("Numeri pari: %d\n", pari);
-    printf("Numeri dispari: %d\n", dispari);
+    caricaVettore(vettore, DIM);
+    stampaVettore(vettore, DIM);
+    pariDispari(vettore, DIM);
     return 0;
 }
-void caricaVettore(int *v, int dim) {
+void caricaVettore(int vett[], int dim) {
     for (int i = 0; i < dim; i++) {
-        v[i] = rand() % 100;
+        vett[i] = rand() % 100;
     }
 }
-void stampaVettore(int *v, int dim) {
+void stampaVettore(int vett[], int dim) {
     for (int i = 0; i < dim; i++) {
-        printf("%d ", v[i]);
+        printf("%d ", vett[i]);
     }
     printf("\n");
 }
-void pariDispari(int *v, int dim, int *p, int *d) {
+void pariDispari(int vett[], int dim) {
+    int cntp=0, cntd=0;
     for (int i = 0; i < dim; i++) {
-        if (v[i] % 2 == 0) {
-            (*p)++;
+        if (vett[i] % 2 == 0) {
+            cntp++;
         } else {
-            (*d)++;
+            cntd++;
         }
     }
+    printf("Pari: %d, Dispari: %d\n", cntp, cntd);
 }
